@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="signup.js"></script>
+  <title>Sign Up/Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ef84b3;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #logo img {
+      height: 50px;
+    }
+
+    #header-icons a:last-child {
+      margin-left: 0;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ef84b3;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ef84b3;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .container p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .container p a {
+      color: #ef84b3;
+      text-decoration: none;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      alert("Login:\nUsername: " + username + "\nPassword: " + password);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div id="header-icons">
+        <a href="login.html">Log in</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form method="POST" action="signup_login.php" onsubmit="event.preventDefault(); signUp();">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="login.html">Log in</a>
+    <p><a href="forgot_password.html">Forgot Password?</a></p>
+  </div>
+</body>
+</html>

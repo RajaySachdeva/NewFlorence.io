@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      /* Add the new CSS for the table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ef84b3;
+        color: #fff;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      td img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      header {
+        background-color: #ef84b3;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      main {
+        margin: 20px;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+      }
+
+      h1 {
+        color: #ef84b3;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      #search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        width: 300px;
+        font-size: 16px;
+      }
+
+      #search-input:focus {
+        border-color: #ef84b3;
+      }
+
+      #search-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #ef84b3;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #search-button:hover {
+        background-color: #c95b88;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+      }
+
+      /* Continue with your existing CSS styles */
+      /* ... */
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Your header content here -->
+    </header>
+
+    <main>
+      <h1>Search Page</h1>
+
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="flower-list">
+        <!-- Display the search results here -->
+      </div>
+    </main>
+
+    <footer>
+      <!-- Your footer content here -->
+    </footer>
+    <script src="search.js"></script>
+  </body>
+</html>
